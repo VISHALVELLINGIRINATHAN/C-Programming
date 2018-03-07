@@ -1,6 +1,6 @@
 import java.util.*;
 import java.lang.*;
- class odd{
+public class odd{
   public static void main(String aa[]){
      int n;
      Scanner s=new Scanner(System.in);
