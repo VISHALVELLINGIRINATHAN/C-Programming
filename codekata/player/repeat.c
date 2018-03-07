@@ -1,0 +1,23 @@
+#include <stdio.h>
+ int main(void) 
+{
+    char st[50],ch;
+	int i,j,count=1,max=1;
+	scanf("%s",st);
+	for(i=0;st[i]!='\0';i++)
+	{
+		for(j=i+1;st[j]!='\0';j++)
+		if(st[i]==st[j])
+		{
+			count=count+1;
+			if(count>max)
+			{
+				max=count;
+				ch=st[i];
+			}
+		}
+ 
+	}
+	printf("%c",ch);
+	return 0;
+}
